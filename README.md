@@ -1,3 +1,3 @@
 # Portfolio
 
-This Repo is designed to track my Webdevelopement experiences during my Bootcamp at Propulsion Accademy.
+This Repo is designed to track my developement experiences during my Bootcamp at Propulsion Accademy.
