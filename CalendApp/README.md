@@ -5,12 +5,12 @@ Agile, first version aims at fully functional list of events (no calendar displa
 # Authors
 
 ### Back End
-Adrian Gross
++Adrian Gross
 
-Julie George
++Julie George
 
 ### Front End
-Matthias Dieng
++Matthias Dieng
 
-Robert Leckenby
++Robert Leckenby
 
