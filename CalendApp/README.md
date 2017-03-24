@@ -6,9 +6,11 @@ Agile, first version aims at fully functional list of events (no calendar displa
 
 ### Back End
 Adrian Gross
+
 Julie George
 
 ### Front End
 Matthias Dieng
+
 Robert Leckenby
 
