@@ -1,0 +1,19 @@
+DROP TABLE tweet IF EXISTS;
+
+
+CREATE TABLE tweet (
+  id INTEGER NOT NULL IDENTITY,
+  original_tweet VARCHAR(100) ,
+  author VARCHAR(20) NOT NULL,
+  text VARCHAR(250) NOT NULL,
+  tweet_type VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE user (
+id INTEGER NOT NULL IDENTITY,
+first_Name VARCHAR(50) ,
+last_Name VARCHAR(50) NOT NULL,
+username VARCHAR(250) NOT NULL,
+password VARCHAR(20) NOT NULL,
+email VARCHAR(20) NOT NULL
+);

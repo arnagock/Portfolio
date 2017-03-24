@@ -1,0 +1,29 @@
+.container-slider {
+  position: relative;
+}
+
+.anker {
+  width: 1200px;
+  height: 7px;
+  background: #404fbe;
+}
+
+.slide {
+  width: 1200px;
+  height: 400px;
+  float: left;
+  transition: transform 1s ease;
+  text-align: center;
+}
+
+.imgSlider{
+width: 50%;
+
+}
+
+.slider {
+  display: inline-block;
+  overflow: hidden;
+  width: 1200px;
+  height: 400px;
+}

@@ -1,0 +1,75 @@
+@font-face{
+  font-family:'Calluna';
+  src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: Calluna, Arial, sans-serif;
+  text-align: center;
+}
+h1{
+font-size: 50px;
+font-family: times;
+
+}
+
+.arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: rgba(64, 79, 190, 0.84);
+  height: 100%;
+  cursor: pointer;
+  top: 0;
+  z-index: 2;
+  width: 2rem;
+}
+
+.arrow:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.arrow__left {
+  left: 0;
+  justify-content: flex-end;
+}
+
+.arrow__left:before {
+  background: linear-gradient(to left, transparent, black);
+}
+
+.arrow__right {
+  right: 0px;
+}
+
+.arrow__right:before {
+  background: linear-gradient(to right, transparent, black);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.buttims{
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  color: white;
+  background-color: #404fbe;
+  border-color: #35419c;
+  border-radius: 5px;
+  height: 25px;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #888888;
+}

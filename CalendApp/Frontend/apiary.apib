@@ -1,0 +1,107 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# calendApp
+
+This interactive calendar app allows users to: 
+- Login
+- Get all events; 
+- Post new event; 
+- Get events by ID; 
+- Toggle event (?)
+- Get users by ID; 
+- Logout; 
+- Register
+
+## Login Collection [/api/login]
+
+### Login [POST]
+Click on 'Login' button and gets back a USER object ('currentUserObject'). 
+The currentUserObj contains a TOKEN (randomly generated)
+
++ Request (application/json)
+    
+        {   
+            email: john@example.com,
+            password: 'password',
+       }
+    
+
++ Response 200 (application/json)
+
+        {
+            token: PQEWURPOQEIQPEWORIU,
+            userID: 123456,
+            name: 'John',
+            surname: 'Doe',
+            email: 'john.doe@example.com',
+            password: 'XXX' (encrypted),
+            events: {
+                event1: {
+                    eventId: '123456'
+                    eventName: 'Beach Party'
+                    creator: {
+                        ...all infos again here?
+                    }
+                    
+                }, 
+                event2: {
+                    ...
+                },
+            },
+            friends: {
+                user1: {
+                    ...
+                },
+                user2: {
+                    ...
+                },
+            }
+        }
+
+## Events Collection [/api/events]
+
+
+### Retrieve an Event [GET]
+
+
+
++ Response 200 (application/json)
+
+        {
+            "question": "Favourite programming language?",
+            "choices": [
+                "Swift",
+                "Python",
+                "Objective-C",
+                "Ruby"
+            ]
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /questions/2
+
+    + Body
+
+            {
+                "question": "Favourite programming language?",
+                "published_at": "2015-08-05T08:40:51.620Z",
+                "choices": [
+                    {
+                        "choice": "Swift",
+                        "votes": 0
+                    }, {
+                        "choice": "Python",
+                        "votes": 0
+                    }, {
+                        "choice": "Objective-C",
+                        "votes": 0
+                    }, {
+                        "choice": "Ruby",
+                        "votes": 0
+                    }
+                ]
+            }

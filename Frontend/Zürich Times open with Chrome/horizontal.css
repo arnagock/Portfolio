@@ -1,0 +1,25 @@
+.container-horizontal {
+  margin-top: 50px;
+  position: relative;
+}
+
+.item {
+  width: calc(25% - 20px);
+  height: 200px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.item:first-child {
+  margin-left: 0;
+}
+
+.horizontal-scroll {
+  transition: transform 1s ease;
+  height: 200px;
+}
+
+.wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+}
